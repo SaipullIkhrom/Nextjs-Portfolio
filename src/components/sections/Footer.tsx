@@ -41,11 +41,29 @@ const Footer = () => {
     style: { willChange: "transform, opacity, filter" }
   };
 
-  const socialLinks = [
-    { name: "Github", href: "https://github.com/SaipullIkhrom", icon: <Github size={20} />, hover: "hover:text-white hover:border-white/50" },
-    { name: "Instagram", href: "https://www.instagram.com/saipulikhromm/", icon: <Instagram size={20} />, hover: "hover:text-pink-500 hover:border-pink-500/50" },
-    { name: "WhatsApp", href: "https://wa.me/6289604210396", icon: <MessageCircle size={20} />, hover: "hover:text-green-500 hover:border-green-500/50" },
-  ];
+ const socialLinks = [
+  { 
+    name: "Github", 
+    href: "https://github.com/SaipullIkhrom", 
+    icon: <Github size={20} />, 
+    hover: "hover:text-white hover:border-white/50",
+    target: "_blank" 
+  },
+  { 
+    name: "Instagram", 
+    href: "https://www.instagram.com/saipulikhromm/", 
+    icon: <Instagram size={20} />, 
+    hover: "hover:text-pink-500 hover:border-pink-500/50",
+    target: "_blank" 
+  },
+  { 
+    name: "WhatsApp", 
+    href: "https://wa.me/6289604210396", 
+    icon: <MessageCircle size={20} />, 
+    hover: "hover:text-green-500 hover:border-green-500/50",
+    target: "_blank" 
+  },
+];
 
   return (
     <footer className="relative bg-black text-zinc-500 pt-32 pb-12 overflow-hidden border-t border-white/5 antialiased">

@@ -6,7 +6,7 @@ import About from "@/components/sections/About";
 import Hero from "@/components/sections/Hero";
 import TechStack from "@/components/sections/TechStack";
 import Projects from "@/components/sections/Projects";
-import Footer from "@/components/sections/Footer"; 
+import Footer from "@/components/sections/Footer";
 import CardNav, { CardNavItem } from "@/components/reactbits/CardNav";
 import { LogoLoop, LogoItem } from "@/components/ui/LogoLoop";
 import {
@@ -45,16 +45,22 @@ export default function Home() {
             label: "Github",
             href: "https://github.com/SaipullIkhrom",
             ariaLabel: "Github",
+            target: "_blank",
+            rel: "noopener noreferrer",
           },
           {
             label: "Instagram",
             href: "https://www.instagram.com/saipulikhromm/",
             ariaLabel: "Instagram",
+            target: "_blank",
+            rel: "noopener noreferrer",
           },
           {
             label: "WhatsApp",
             href: "https://wa.me/6289604210396",
             ariaLabel: "WhatsApp",
+            target: "_blank",
+            rel: "noopener noreferrer",
           },
         ],
       },
