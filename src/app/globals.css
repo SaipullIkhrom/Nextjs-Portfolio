@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #3b82f6;
+}
+
+:root {
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@theme {
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  --animate-infinite-scroll: infinite-scroll 60s linear infinite;
+  --color-project-purple: #8B5CF6;
+  --color-project-green: #10B981; 
+  --color-project-pink: #EC4899;   
+  --color-project-yellow: #FACC15;
+  --color-project-cyan: #06B6D4;  
+  --color-project-red: #EF4444;    
+}
+
+@utility text-glow-blue {
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+@theme {
+  --tracking-ultra-wide: 0.8em;
+  --shadow-blue-dot: 0 0 8px var(--color-blue-500);
+}
+
+@utility bg-blue-glow {
+  background-color: var(--color-blue-600);
+  opacity: 0.1;
+  filter: blur(120px);
+}
+
+@utility bg-soft-blue-glow {
+  background: radial-gradient(circle at center, var(--color-blue-900) 0%, transparent 70%);
+  opacity: 0.15;
+  filter: blur(100px);
+}
+
+@theme {
+  --spacing-125: 31.25rem;
+  --tracking-ultra-wide: 0.8em;
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+}
+
+@utility bg-glow-mesh {
+  background-image: radial-gradient(circle at 50% 50%, var(--color-blue-900), transparent 70%);
+  opacity: 0.12;
+  filter: blur(80px);
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+@utility bg-glow-blue {
+  background: radial-gradient(circle at center, var(--color-blue-900) 0%, transparent 70%);
+  opacity: 0.1;
+  filter: blur(100px);
+}
+
+@utility text-glow-blue-subtle {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
